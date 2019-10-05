@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "shardus-deploy": "built/bin/index.js"
+    "shardus-deploy": "bin/index.js"
   },
-  "main": "built/index.js",
+  "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "code:lint": "eslint --ext .js,.ts \"src/\" --fix",
+    "code:lint": "eslint --ext .js, .ts --fix",
     "code:check:rules": "eslint --print-config .eslintrc.js"
   },
   "keywords": [],
